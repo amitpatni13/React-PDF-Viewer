@@ -1,0 +1,22 @@
+.pdf-view-head {
+    display: grid;
+    grid-template-columns: 1fr 19fr;
+    padding: 25px;
+}
+
+.pdf-view-logo {
+    justify-self: right;
+    width: 20px;
+    margin-right: 5px;
+}
+
+.pdf-view-title {
+    justify-self: left;
+    margin-top: -2px;
+}
+
+.pdf-view-area {
+    width: 75%;
+    margin-left: 23px;
+    height: 70vh;
+}

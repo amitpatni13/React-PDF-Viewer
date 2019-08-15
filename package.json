@@ -1,17 +1,22 @@
 {
-  "name": "ventive_assigmnent",
+  "name": "ventive_assignment",
   "version": "0.1.0",
   "private": true,
+  "main": "electron/main.js",
   "dependencies": {
+    "electron-is-dev": "^1.1.0",
+    "node-sass": "^4.12.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
+    "react-pdf": "^4.1.0",
     "react-scripts": "3.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "electron-dev": "concurrently \"npm run start\" \"wait-on http://localhost:3000 && electron .\""
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -29,6 +34,10 @@
     ]
   },
   "devDependencies": {
-    "electron": "^6.0.2"
+    "@rescripts/cli": "0.0.11",
+    "@rescripts/rescript-env": "0.0.10",
+    "concurrently": "^4.1.1",
+    "electron": "^6.0.2",
+    "wait-on": "^3.3.0"
   }
 }

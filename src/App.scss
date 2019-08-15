@@ -1,0 +1,14 @@
+.App {
+  display: grid;
+  grid-template-columns: 3fr 7fr;
+  height: 100vh;
+}
+
+.App-Main {
+  justify-self: center;
+  pointer-events: none;
+}
+
+.App-Side-Bar {
+  justify-self: center;
+}
